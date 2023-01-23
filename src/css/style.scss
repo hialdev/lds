@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Jost:wght@300;400;500&display=swap');
+
+// --------- Variable
+$black : #292F36;
+
+h1,h2,h3,h4,h5,h6,.font-dm{
+    font-family: 'DM Serif Display', serif;
+    line-height: 125%;
+    letter-spacing: 0.02em;
+}
+h1{
+    font-size: 85px;
+}
+*{
+    font-family: 'Jost', sans-serif;
+    line-height: 150%;
+    letter-spacing: 0.01em;
+}
+
+.icon{
+    background: #E9F4FF;
+    color: #292F36;
+}
+
+// -------- Component
+
+// Button
+.btn-lds{
+    display: inline-flex;
+    align-items: center;
+    gap: 0.7em;
+    font-weight: 400;
+    &::after{
+        content: url('https://api.iconify.design/ic/round-arrow-forward.svg?color=%232f7cff');
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: -5px;
+    }
+    &-prm{
+        padding: 1.4em 2em;
+        background: $black;
+        color: white;
+        box-shadow: 0px 10px 20px rgba(41, 47, 54, 0.25);
+        border-radius: 18px;
+        &:hover{
+            background-color: #212121;
+        }
+    }
+
+    &-sec{
+        font-weight: 500;
+        color: $black;
+    }
+}
+
+// Navbar
+nav.menu>a{
+    color: #292F36;
+    text-decoration: none;
+
+    &.active{
+        font-weight: 600;
+        color: $black;
+    }
+}
+
+
+// -------- Section
+// Hero
+.hero{
+    min-height: 80vh;
+    padding: 10em 0px;
+    border-radius: 0px 0px 0px 10em;
+}
+
+// Service
+.service{
+    margin: 6em 0px;
+}
+
+// Brand
+.brand{
+    padding: 6em 0px;
+    img{
+        height: 2em;
+        object-fit: contain;
+    }
+}
+
+// Project
+.project{
+    padding: 10em 0px;
+    
+    &-item{
+        color: $black;
+        &:first-child img{
+            border-top-right-radius: 8em;
+        }
+        
+        &:nth-child(2) img{
+            border-top-left-radius: 8em;
+        }
+        
+        &:nth-child(3) img{
+            border-bottom-right-radius: 8em;
+        }
+        
+        &:nth-child(4) img{
+            border-bottom-left-radius: 8em;
+        }
+
+        img{
+            width: 100%;
+            aspect-ratio: 1 / 1;
+        }
+        .badge{
+            font-weight: 400;
+        }
+
+    }
+}
+
+// Article
+.article{
+    padding: 10em 0px;
+    &-item{
+        border-radius: 62px;
+        &:hover{
+            background: #E9F4FF;
+            border-color: #E9F4FF !important;
+            .icon{
+                background: #fff;
+            }
+        }
+        img{
+            aspect-ratio: 3 / 2;
+            border-top-left-radius: 45px;
+            border-top-right-radius: 45px;
+            object-fit: cover;
+        }
+
+    }
+}

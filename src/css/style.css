@@ -1,0 +1,124 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Jost:wght@300;400;500&display=swap");
+h1, h2, h3, h4, h5, h6, .font-dm {
+  font-family: "DM Serif Display", serif;
+  line-height: 125%;
+  letter-spacing: 0.02em;
+}
+
+h1 {
+  font-size: 85px;
+}
+
+* {
+  font-family: "Jost", sans-serif;
+  line-height: 150%;
+  letter-spacing: 0.01em;
+}
+
+.icon {
+  background: #E9F4FF;
+  color: #292F36;
+}
+
+.btn-lds {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.7em;
+  font-weight: 400;
+}
+.btn-lds::after {
+  content: url("https://api.iconify.design/ic/round-arrow-forward.svg?color=%232f7cff");
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: -5px;
+}
+.btn-lds-prm {
+  padding: 1.4em 2em;
+  background: #292F36;
+  color: white;
+  box-shadow: 0px 10px 20px rgba(41, 47, 54, 0.25);
+  border-radius: 18px;
+}
+.btn-lds-prm:hover {
+  background-color: #212121;
+}
+.btn-lds-sec {
+  font-weight: 500;
+  color: #292F36;
+}
+
+nav.menu > a {
+  color: #292F36;
+  text-decoration: none;
+}
+nav.menu > a.active {
+  font-weight: 600;
+  color: #292F36;
+}
+
+.hero {
+  min-height: 80vh;
+  padding: 10em 0px;
+  border-radius: 0px 0px 0px 10em;
+}
+
+.service {
+  margin: 6em 0px;
+}
+
+.brand {
+  padding: 6em 0px;
+}
+.brand img {
+  height: 2em;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.project {
+  padding: 10em 0px;
+}
+.project-item {
+  color: #292F36;
+}
+.project-item:first-child img {
+  border-top-right-radius: 8em;
+}
+.project-item:nth-child(2) img {
+  border-top-left-radius: 8em;
+}
+.project-item:nth-child(3) img {
+  border-bottom-right-radius: 8em;
+}
+.project-item:nth-child(4) img {
+  border-bottom-left-radius: 8em;
+}
+.project-item img {
+  width: 100%;
+  aspect-ratio: 1/1;
+}
+.project-item .badge {
+  font-weight: 400;
+}
+
+.article {
+  padding: 10em 0px;
+}
+.article-item {
+  border-radius: 62px;
+}
+.article-item:hover {
+  background: #E9F4FF;
+  border-color: #E9F4FF !important;
+}
+.article-item:hover .icon {
+  background: #fff;
+}
+.article-item img {
+  aspect-ratio: 3/2;
+  border-top-left-radius: 45px;
+  border-top-right-radius: 45px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}/*# sourceMappingURL=style.css.map */

@@ -137,7 +137,7 @@ nav.menu > div {
 }
 @media (min-width: 0px) and (max-width: 992px) {
   nav.menu {
-    translate: 100%;
+    translate: 110%;
     z-index: 20;
     position: fixed;
     top: 0;

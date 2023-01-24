@@ -1,4 +1,42 @@
 @import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Jost:wght@300;400;500&display=swap");
+/* Extra small devices (phone) */
+@media (max-width: 576px) {
+  /* CSS rules for extra small devices here */
+}
+/* Small devices (tablet) */
+@media (min-width: 576px) and (max-width: 768px) {
+  /* CSS rules for small devices here */
+}
+/* Medium devices (laptop) */
+@media (min-width: 768px) and (max-width: 992px) {
+  /* CSS rules for medium devices here */
+}
+/* Large devices (desktop) */
+@media (min-width: 992px) and (max-width: 1200px) {
+  /* CSS rules for large devices here */
+}
+/* Extra large devices (large desktop) */
+@media (min-width: 1200px) {
+  /* CSS rules for extra large devices here */
+}
+.lc {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.lc-1 {
+  -webkit-line-clamp: 1;
+}
+.lc-2 {
+  -webkit-line-clamp: 2;
+}
+.lc-3 {
+  -webkit-line-clamp: 3;
+}
+.lc-4 {
+  -webkit-line-clamp: 4;
+}
+
 h1, h2, h3, h4, h5, h6, .font-dm {
   font-family: "DM Serif Display", serif;
   line-height: 125%;
@@ -7,6 +45,30 @@ h1, h2, h3, h4, h5, h6, .font-dm {
 
 h1 {
   font-size: 85px;
+  /* Extra small devices (phone) */
+  /* Small devices (tablet) */
+  /* Medium devices (laptop) */
+  /* Large devices (desktop) */
+}
+@media (max-width: 576px) {
+  h1 {
+    font-size: 40px;
+  }
+}
+@media (min-width: 576px) and (max-width: 768px) {
+  h1 {
+    font-size: 40px;
+  }
+}
+@media (min-width: 768px) and (max-width: 992px) {
+  h1 {
+    font-size: 60px;
+  }
+}
+@media (min-width: 992px) and (max-width: 1200px) {
+  h1 {
+    font-size: 70px;
+  }
 }
 
 * {
@@ -25,6 +87,7 @@ h1 {
   align-items: center;
   gap: 0.7em;
   font-weight: 400;
+  white-space: nowrap;
 }
 .btn-lds::after {
   content: url("https://api.iconify.design/ic/round-arrow-forward.svg?color=%232f7cff");
@@ -48,6 +111,55 @@ h1 {
   color: #292F36;
 }
 
+.burger {
+  display: none;
+  cursor: pointer;
+}
+.burger > .iconify {
+  font-size: 28px;
+}
+@media (min-width: 0px) and (max-width: 992px) {
+  .burger {
+    display: flex;
+  }
+}
+
+nav.menu {
+  transition: all 300ms ease-in-out;
+  /* Small devices (tablet) */
+}
+nav.menu > div {
+  display: none;
+}
+@media (min-width: 0px) and (max-width: 992px) {
+  nav.menu {
+    translate: 100%;
+    z-index: 20;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 17em;
+    bottom: 0;
+    flex-direction: column;
+    background-color: #f7f7f7;
+    -webkit-backdrop-filter: blur(2px);
+            backdrop-filter: blur(2px);
+    align-items: flex-end !important;
+    justify-content: start !important;
+    padding: 2em;
+  }
+  nav.menu > div {
+    display: flex;
+    cursor: pointer;
+  }
+  nav.menu > div:hover {
+    background-color: var(--bs-danger) !important;
+    color: white !important;
+  }
+  nav.menu.active {
+    translate: 0;
+  }
+}
 nav.menu > a {
   color: #292F36;
   text-decoration: none;
@@ -103,7 +215,7 @@ nav.menu > a.active {
 }
 
 .article {
-  padding: 10em 0px;
+  padding: 8em 0px;
 }
 .article-item {
   border-radius: 62px;

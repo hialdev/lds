@@ -19,7 +19,7 @@
 @media (min-width: 1200px) {
   /* CSS rules for extra large devices here */
 }
-body {
+body, main {
   overflow-x: hidden !important;
 }
 

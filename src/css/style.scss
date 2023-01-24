@@ -124,6 +124,9 @@ h1{
     &-sec{
         font-weight: 500;
         color: $black;
+        &:hover{
+            text-decoration: underline !important;
+        }
     }
 }
 
@@ -206,25 +209,30 @@ nav.menu{
     
     &-item{
         color: $black;
-        &:first-child img{
+        .project-img{overflow: hidden !important;}
+        &:first-child .project-img{
             border-top-right-radius: 8em;
         }
         
-        &:nth-child(2) img{
+        &:nth-child(2) .project-img{
             border-top-left-radius: 8em;
         }
         
-        &:nth-child(3) img{
+        &:nth-child(3) .project-img{
             border-bottom-right-radius: 8em;
         }
         
-        &:nth-child(4) img{
+        &:nth-child(4) .project-img{
             border-bottom-left-radius: 8em;
         }
 
-        img{
+        .project-img img{
             width: 100%;
             aspect-ratio: 1 / 1;
+            transition: all 200ms ease-in-out;
+            &:hover{
+                transform: scale(1.1,1.1);
+            }
         }
         .badge{
             font-weight: 400;

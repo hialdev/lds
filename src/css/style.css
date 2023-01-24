@@ -114,6 +114,9 @@ h1 {
   font-weight: 500;
   color: #292F36;
 }
+.btn-lds-sec:hover {
+  text-decoration: underline !important;
+}
 
 .burger {
   display: none;
@@ -198,21 +201,28 @@ nav.menu > a.active {
 .project-item {
   color: #292F36;
 }
-.project-item:first-child img {
+.project-item .project-img {
+  overflow: hidden !important;
+}
+.project-item:first-child .project-img {
   border-top-right-radius: 8em;
 }
-.project-item:nth-child(2) img {
+.project-item:nth-child(2) .project-img {
   border-top-left-radius: 8em;
 }
-.project-item:nth-child(3) img {
+.project-item:nth-child(3) .project-img {
   border-bottom-right-radius: 8em;
 }
-.project-item:nth-child(4) img {
+.project-item:nth-child(4) .project-img {
   border-bottom-left-radius: 8em;
 }
-.project-item img {
+.project-item .project-img img {
   width: 100%;
   aspect-ratio: 1/1;
+  transition: all 200ms ease-in-out;
+}
+.project-item .project-img img:hover {
+  transform: scale(1.1, 1.1);
 }
 .project-item .badge {
   font-weight: 400;

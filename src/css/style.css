@@ -19,6 +19,10 @@
 @media (min-width: 1200px) {
   /* CSS rules for extra large devices here */
 }
+body {
+  overflow-x: hidden !important;
+}
+
 .lc {
   display: -webkit-box;
   -webkit-box-orient: vertical;
@@ -141,7 +145,7 @@ nav.menu > div {
     width: 17em;
     bottom: 0;
     flex-direction: column;
-    background-color: #f7f7f7;
+    background-color: #fff;
     -webkit-backdrop-filter: blur(2px);
             backdrop-filter: blur(2px);
     align-items: flex-end !important;

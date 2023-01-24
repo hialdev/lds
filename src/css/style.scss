@@ -33,6 +33,10 @@ $lg: 1200px;
   /* CSS rules for extra large devices here */
 }
 
+body{
+    overflow-x: hidden !important;
+}
+
 .lc {
     display: -webkit-box;
     -webkit-box-orient: vertical;  
@@ -143,7 +147,7 @@ nav.menu{
         width: 17em;
         bottom: 0;
         flex-direction: column;
-        background-color: #f7f7f7;
+        background-color: #fff;
         backdrop-filter: blur(2px);
         align-items: flex-end !important;
         justify-content: start !important;

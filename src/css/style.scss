@@ -172,7 +172,10 @@ nav.menu{
     &>a{
         color: #292F36;
         text-decoration: none;
-
+        &:hover{
+            font-weight: 500;
+            color: #2e269c;
+        }
         &.active{
             font-weight: 600;
             color: $black;

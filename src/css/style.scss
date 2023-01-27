@@ -183,6 +183,13 @@ nav.menu{
     }
 }
 
+//Content
+.content{
+    img{
+        width: 100% !important;
+        margin: 1em 0px;
+    }
+}
 
 // -------- Section
 // Hero
@@ -209,10 +216,7 @@ nav.menu{
 // Project
 .project{
     padding: 10em 0px;
-    
-    &-item{
-        color: $black;
-        .project-img{overflow: hidden !important;}
+    .project-item{
         &:first-child .project-img{
             border-top-right-radius: 8em;
         }
@@ -228,6 +232,10 @@ nav.menu{
         &:nth-child(4) .project-img{
             border-bottom-left-radius: 8em;
         }
+    }
+    &-item{
+        color: $black;
+        .project-img{overflow: hidden !important;}
 
         .project-img img{
             width: 100%;
@@ -241,6 +249,17 @@ nav.menu{
             font-weight: 400;
         }
 
+    }
+}
+.project-p .project-item{
+    &:nth-child(even) .project-img{
+        border-top-right-radius: 8em;
+        border-bottom-left-radius: 8em;
+    }
+    
+    &:nth-child(odd) .project-img{
+        border-top-left-radius: 8em;
+        border-bottom-right-radius: 8em;
     }
 }
 

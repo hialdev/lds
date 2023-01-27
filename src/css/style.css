@@ -180,6 +180,11 @@ nav.menu > a.active {
   color: #292F36;
 }
 
+.content img {
+  width: 100% !important;
+  margin: 1em 0px;
+}
+
 .hero {
   min-height: 80vh;
   padding: 10em 0px;
@@ -202,23 +207,23 @@ nav.menu > a.active {
 .project {
   padding: 10em 0px;
 }
+.project .project-item:first-child .project-img {
+  border-top-right-radius: 8em;
+}
+.project .project-item:nth-child(2) .project-img {
+  border-top-left-radius: 8em;
+}
+.project .project-item:nth-child(3) .project-img {
+  border-bottom-right-radius: 8em;
+}
+.project .project-item:nth-child(4) .project-img {
+  border-bottom-left-radius: 8em;
+}
 .project-item {
   color: #292F36;
 }
 .project-item .project-img {
   overflow: hidden !important;
-}
-.project-item:first-child .project-img {
-  border-top-right-radius: 8em;
-}
-.project-item:nth-child(2) .project-img {
-  border-top-left-radius: 8em;
-}
-.project-item:nth-child(3) .project-img {
-  border-bottom-right-radius: 8em;
-}
-.project-item:nth-child(4) .project-img {
-  border-bottom-left-radius: 8em;
 }
 .project-item .project-img img {
   width: 100%;
@@ -230,6 +235,15 @@ nav.menu > a.active {
 }
 .project-item .badge {
   font-weight: 400;
+}
+
+.project-p .project-item:nth-child(even) .project-img {
+  border-top-right-radius: 8em;
+  border-bottom-left-radius: 8em;
+}
+.project-p .project-item:nth-child(odd) .project-img {
+  border-top-left-radius: 8em;
+  border-bottom-right-radius: 8em;
 }
 
 .article {
